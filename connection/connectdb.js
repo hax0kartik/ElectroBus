@@ -1,5 +1,5 @@
 let mongoose = require('mongoose') 
-let URI = "mongodb+srv://root:root@my-cluster.zbvsw6k.mongodb.net/?retryWrites=true&w=majority"
+let URI = process.env.DB_CONNECTION_STRING
 let connectdb = () => {
     try{
         let con = mongoose.connect(URI, {

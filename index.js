@@ -6,6 +6,7 @@ const user = require('./model/user.js')
 const contact = require('./model/contact-us.js')
 const bus = require('./model/bus.js')
 const tour = require('./model/tour.js')
+const port = process.env.PORT || 3001;
 
 /* get JSONs */
 let explorejson = require('./public/jsons/explore.json')
@@ -139,6 +140,6 @@ app.get("*", (req, res) => {
     res.render("landing", {landing : true, snackbar:true, message: "Oops.. URL was not found!"})
 })
 
-app.listen("80", () => {
+app.listen(port, () => {
     console.log("Server is running")
 })
