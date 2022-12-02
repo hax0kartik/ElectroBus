@@ -8,7 +8,7 @@
         },
         
         "button" : {
-            "link" : "/explore",
+            "link" : "/explore.html",
             "text" : "Explore"
         }
     }

@@ -1,5 +1,4 @@
 var a = 1;
-let amounts = []
 
 function showDropDown(b){
     let elems = document.getElementsByClassName("dropdown")[b];
@@ -13,17 +12,8 @@ function showDropDown(b){
     }
 }
 
-let selected = 0
-
 function selectedbox(clicked_id){
     let elems = document.getElementById(clicked_id)
-    if(elems.className === "seat-greyed")
-        return
-    selected++
-    let seat_selected = document.getElementById("add_margin")
-    let amount = document.getElementById("details-content")
-    seat_selected.innerHTML += clicked_id + "  "
-    amount.innerText = "Total Cost : " + selected * amounts[0]
     elems.className = "seat-selected";
 }
 
@@ -56,8 +46,4 @@ for(let i = 0; i < elems.length; i++){
             elems[i].className = "seat-greyed";
         }
     }
-}
-
-function setAmount(amount){
-    amounts.push(amount)
 }
