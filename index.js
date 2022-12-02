@@ -1,3 +1,7 @@
+/* import variables from env file first */
+const dotenv = require('dotenv')
+dotenv.config();
+
 let Express = require('express')
 let path = require('path')
 let hbs = require('hbs')
@@ -6,7 +10,9 @@ const user = require('./model/user.js')
 const contact = require('./model/contact-us.js')
 const bus = require('./model/bus.js')
 const tour = require('./model/tour.js')
+
 const port = process.env.PORT || 3001;
+
 
 /* get JSONs */
 let explorejson = require('./public/jsons/explore.json')
