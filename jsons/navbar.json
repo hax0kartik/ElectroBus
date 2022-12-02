@@ -2,7 +2,7 @@
     "navbar" : {
         "icon" : "images/new logo.png",
         "items" : [
-            ["HOME" , "/Electrobus/"], 
+            ["HOME" , "/ElectroBus/"], 
             ["LAUNDRY", "laundry.html"],
             ["CONTACT US", "contact-us.html"],
             ["LOGIN", "Login.html"]

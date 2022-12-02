@@ -58,7 +58,7 @@ class Page{
             desc.className = "description"
             desc.innerHTML = "<p><i>" + json["pages"][i]["description"] + "</i></p>"
             let anchor = document.createElement("a")
-            anchor.href = "/search.html"
+            anchor.href = "search.html"
             let button = document.createElement("button")
             button.innerText = "Book Now"
             anchor.appendChild(button)
