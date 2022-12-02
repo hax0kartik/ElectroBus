@@ -1,5 +1,6 @@
 let mongoose = require('mongoose') 
 let URI = process.env.DB_CONNECTION_STRING
+console.log(URI)
 let connectdb = () => {
     try{
         let con = mongoose.connect(URI, {
