@@ -1,0 +1,11 @@
+{
+    "page" : {
+        "body" : "Contact Us",
+        "form" : [
+            "Your Name", "Your Email", 
+            "Your Phone Number", "Your Message"
+        ],
+        "submit-button": "Submit"
+    }
+ 
+}

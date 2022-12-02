@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-contactus.css">
+    <link rel="stylesheet" href="css/style-snackbar.css">
+    <title>Document</title>
+
+</head>
+<body style="background-color: #212121;">
+    {{>navbar}}
+    {{#if snackbar}}
+    {{>snackbar}}
+    {{/if}}
+    <h1 class="h1">Contact Us</h1>
+    <div class="contact-session">
+       
+        <div class="border"></div>
+        <form class="contact-form" action="/contact-us" method="post">
+            <input type="text" class="contact-form-text" placeholder="Your name" name="name">
+            <input type="email" class="contact-form-text" placeholder="Your email" name="email">
+            <input type="text " class="contact-form-text" placeholder="Your phone" name="phone">
+            <textarea class="contact-form-text" placeholder="Your message" name="message"></textarea>
+            <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+    </div>
+    <script>
+        {{#if snackbar}}
+            console.log("SNACKBAR")
+            var x = document.getElementById("snackbar")
+            // Add the "show" class to DIV
+            x.className = "show";
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ 
+                x.className = x.className.replace("show", "")
+                }, 3000)
+        {{/if}}
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+    "trending": [
+        {
+            "bus" : {
+                "name" : "Volt",
+                "type" : "AC Seater / Sleeper 2+1",
+                "facilities" : {
+                    "wifi" : true,
+                    "water-bottle": true,
+                    "lamp": true
+                }
+            },
+
+            "tour" : {
+                "departure" : "12:00",
+                "arrival" : "20:20",
+                "duration" : "08h 20min",
+                "from" : "Delhi",
+                "to" : "Udaipur",
+                "cost" : 4000,
+                "total-seats" : 30,
+                "single-seats" : 30,
+                "people" : 30,
+                "rating" : 4.7,
+                "deal" : true,
+                "stops" : 13,
+                "departure-date": "12 Nov 2022"
+            }
+        },
+
+        {
+            "bus" : {
+                "name" : "Ampere",
+                "type" : "AC Seater / Sleeper 2+1",
+                "facilities" : {
+                    "wifi" : false,
+                    "water-bottle": true,
+                    "lamp": true
+                }
+            },
+
+            "tour" : {
+                "departure" : "12:00",
+                "arrival" : "20:20",
+                "duration" : "08h 20min",
+                "from" : "Delhi",
+                "to" : "Jaipur",
+                "cost" : 5000,
+                "total-seats" : 40,
+                "single-seats" : 30,
+                "people" : 40,
+                "rating" : 4.8,
+                "deal" : true,
+                "stops" : 13,
+                "departure-date": "12 Nov 2022"
+            }
+        }
+
+    ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Bus Login</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    {{#if islogin}}
+    <link rel="stylesheet" href="css/style-login.css">
+    {{else}}
+    <link rel="stylesheet" href="css/style-signup.css">
+    {{/if}}
+    <link rel="stylesheet" href="css/style-snackbar.css">
+</head>
+<body style="background-color: #212121">
+    {{>navbar}}
+    {{#if snackbar}}
+    {{>snackbar}}
+    {{/if}}
+    <img src="videos/log-in-girl.svg" class="girl">
+        <div class="login">
+        {{#if islogin}}
+            <h2 style="color: white;">Login Here</h2>
+            <form style="margin-top:30px ;" action ="/Login" method = "post">
+                <input type="text" name="username" placeholder="Enter Username">
+                <input type="password" name="password" placeholder="Enter Password">
+                <br>
+                <input type="submit" name="" value="Login" style="background-color:rgb(180, 54, 16)" style="color: white;">
+                <br>
+                <div style="color: white;">
+                    New to Electrobus?
+                    <a href="/signup" style="text-decoration: underline; color: #1976d2">Create account</a>
+                </div>
+                <br>
+            </form>
+        {{else}}
+            <h2 style="color: white;">Create your Free Accggtggghghount</h2>
+            <form style="margin-top:30px;" action="/signup" method="post">
+                <input type="text" placeholder="Enter Name" name="name">
+                <input type="text" placeholder="Enter Email" name="email">
+                <input type="password" placeholder="Enter new Password" name="pass">
+                <br>
+                <input type="submit" value="Create Account" style="background-color:rgb(180, 54, 16)" style="color: white;">
+            </form>
+            <p style="color: #fff;">or</p>
+        {{/if}}
+        <div class="signin-container">
+            <img src="images/google icon.jfif" alt="">  
+            <p>Sign in with Google</p>
+        </div>   
+        <div class="facebook-container">
+            <img src="images/facebook icon.jfif" alt="">
+                <p>Sign in with facebook</p>
+        </div>
+    </div>
+    <script>
+        {{#if snackbar}}
+            console.log("SNACKBAR")
+            var x = document.getElementById("snackbar");
+            // Add the "show" class to DIV
+            x.className = "show";
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ 
+                x.className = x.className.replace("show", ""); 
+                }, 3000);
+            {{#if snackbar.valid}}
+            setTimeout(function(){
+                window.location.href = "http://localhost/explore"
+            }, 5000);
+            {{/if}}
+        {{/if}}
+    </script>
+</body>
+</html>

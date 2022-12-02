@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montessat', sans-serif;
+    overflow: hidden;
+}
+
+
+nav{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+nav .logo{
+    height: 60px;
+    opacity: 0;
+}
+
+nav ul li{
+    padding-bottom: 3px;
+    list-style: none;
+    display:inline-block;
+    margin-left: 40px;
+}
+
+
+nav ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+
+.login{
+    text-align: center;
+    width: 400px;
+    height: fit-content;
+    background: #212121;
+    top: 0%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%, 35%);
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.login p{
+    margin: 0;
+    padding: 0;
+    font-weight:bold;
+}
+
+.login input{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 19px;
+}
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: aliceblue;
+}
+
+.login a:hover{
+    color: #ffc107;
+}
+
+
+.girl{
+    margin: 0%;
+    width: 50% ;
+    height: 55%;
+    background: #202047;
+    background: radial-gradient(circle,#202047 0,#020917 100%);
+    align-items: center!important;
+}
+
+.signin-container{
+    margin-left: 100PX;
+    background-color: #fefefe;
+    display: flex;
+    width: 48%;
+    padding: 7px 4px 7px 4px;
+    border-radius: 10px;
+    /* box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25); */
+    margin-top: 4%;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif; */
+    font-family: sans-serif;
+}
+
+.signin-container:hover{
+    filter: drop-shadow(0 0 0.5rem blue);
+}
+
+.signin-container img{
+    height: 30px;
+    width: 30px;
+}
+.signin-container p{
+    color: black;
+    margin-top: 3%;
+    margin-left: 7%;
+    font-weight: 500;
+}
+
+.facebook-container{
+    margin-left: 100px;
+    display: inline-block;
+    background-color: #fefefe;
+    display: flex;
+    width: 49%;
+    padding: 7px 4px 7px 4px;
+    border-radius: 10px;
+    /* box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25); */
+    margin-top: 4%;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif; */
+    font-family: sans-serif;
+    height: 45px;
+}
+
+.facebook-container:hover{
+    filter: drop-shadow(0 0 0.5rem blue);
+}
+
+.facebook-container img{
+    height: 30px;
+    width: 30px;
+}
+
+.facebook-container p{
+    color: black;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-weight: 500;
+}

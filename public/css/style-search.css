@@ -1,0 +1,389 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montessat', sans-serif;
+}
+
+body {
+    background-color: #212121;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+nav{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+nav .logo{
+    height: 60px;
+}
+
+nav ul li{
+    padding-bottom: 3px;
+    list-style: none;
+    display:inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+
+
+.container {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.searchbar{
+    max-width: max-content;
+    margin: auto;
+    margin-top: 12%;
+    margin-bottom: 16px;
+}
+
+.searchbar form input{
+    height: 46px;
+    width: 160px;
+    padding-left: 10px;
+}
+
+.searchbar button{
+    background-color: #ce000a;
+    width: 160px;
+    height: 50px;
+    border: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.trending-heading{
+    display: block;
+    margin: auto;
+    max-width: max-content;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.trending-box{
+    height: 120px;
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    color:black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 12px;
+    animation: 1.5s ease-in-out 0s 1 slideFromBottom;
+}
+
+.trending-box:hover{
+    /* background-color: red; */
+    /* box-shadow: rgba(214, 46, 46, 0.1) 0px 4px 12px; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 120px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.left-content{
+    width: fit-content;
+    height: 120px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bus-name h1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.trending-box .left-content p{
+    padding-bottom: 5px;
+}
+
+
+.midcontent{
+    height: 120px;
+    padding-top: 10px;
+}
+
+.midcontent h2{
+    padding-bottom: 8px;
+}
+
+.midcontent .arrow{
+    height: 48px;
+}
+
+.stops{
+    display: flex;
+    align-items: center;
+}
+
+.right-content{
+    background-color: #ce000a;
+    width: 20%;
+    float: right;
+    height: 120px;
+}
+
+.right-content button{
+    background-color: #ce000a;
+    float: right;
+    height: 120px;
+    width: 50%;
+    border: 0px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.right-content button:hover{
+    cursor: pointer;
+}
+
+.right-deal-departure-container{
+    position: absolute;
+    margin-left: 15px;
+}
+
+.deal-container{
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+}
+
+.deal-container p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.center-content{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.people-rating-container{
+    display: flex;
+    justify-content: space-evenly;
+    width : 150px;
+}
+
+.rating-container{
+    display: flex;
+    background-color: #38B87C;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.people-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60px;
+}
+
+.extra-detail-container{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
+}
+
+.tc-grey{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown{
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    background-color: #eaebea;
+    color: black;
+    display: none;
+}
+
+.dropdown #top{
+    padding-top: 20px; 
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.seats-container{
+    height: 200px;
+    width: 800px;
+    border: 1px dashed #c6c7c7;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.seats-container #front{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: -15px;
+    color: #b1aeae;
+}
+
+.seats-inner-container{
+    height : 180px;
+    width: 750px;
+    margin: auto;
+    border: 1px dashed #c6c7c7;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seats-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seat {
+    height: 24px;
+    width : 24px;
+    border: 1px solid #ececed;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.space {
+    height: 30px;
+}
+
+.seat-greyed {
+    height: 24px;
+    width : 24px;
+    border: 1px solid #ececed;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #c0c1c1;
+}
+
+.seat-selected {
+    height: 24px;
+    width : 24px;
+    border: 1px solid #ececed;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #94d999;
+}
+
+
+.legend {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.legend-box{
+    border: 1px solid #212121;
+}
+
+.legend-item{
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.legend-item p {
+    padding-left: 5px;
+}
+
+.right-content2{
+    position: absolute;
+    height: 320px;
+    width: 180px;
+    margin-top: -295px;
+    margin-left: 820px;
+    float: right;
+    padding-top: 30px;
+}
+
+.right-content2 #details{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.right-content2 #details-content{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+}
+
+#add_margin{
+    padding-top: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+}
+
+.right-content2 button{
+    height : 40px;
+    width: 160px;
+    background-color: #ce000a;
+    color: white;
+    border: 0;
+    margin-top: 70px;
+    margin-left: 10px;
+}

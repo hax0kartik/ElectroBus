@@ -1,0 +1,15 @@
+{
+    "page": {
+        "video" : "videos/Pexels Videos 2235731.mp4",
+        
+        "content" : {
+            "heading" : "The Easiest Way to<br>Book Tickets",
+            "paragraph" : "Discover the ultimate travel experience with<br>ELECTROBUS."
+        },
+        
+        "button" : {
+            "link" : "/explore",
+            "text" : "Explore"
+        }
+    }
+}

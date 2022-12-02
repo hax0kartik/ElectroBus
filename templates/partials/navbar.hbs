@@ -1,0 +1,25 @@
+<nav>
+    <img src="/images/new logo.png" class="logo">
+    <ul>
+        {{#if landing}}
+            <li class="active"><a href="/">HOME</a></li>
+        {{else}}
+            <li><a href="/">HOME</a></li>
+        {{/if}}
+        {{#if laundry}}
+            <li class="active"><a href="/laundry">LAUNDRY</a></li>
+        {{else}}
+            <li><a href="/laundry">LAUNDRY</a></li>
+        {{/if}}
+        {{#if contactus}}
+            <li class="active"><a href="/contact-us">CONTACT US</a></li>
+        {{else}}
+            <li><a href="/contact-us">CONTACT US</a></li>
+        {{/if}}
+        {{#if login}}
+            <li class="active"><a href="/Login">LOGIN</a></li>
+        {{else}}
+            <li><a href="/Login">LOGIN</a></li>
+        {{/if}}
+    </ul>
+</nav>

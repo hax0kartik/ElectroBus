@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montessat', sans-serif;
+}
+
+nav{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+nav .logo{
+    height: 60px;
+}
+
+nav ul li{
+    padding-bottom: 3px;
+    list-style: none;
+    display:inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 17px;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+
+
+.h1{
+    padding-top: 2em;
+    padding-bottom: 0.7em;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.contact-section{
+    background-size: cover;
+    padding: 40px 0;
+
+}
+
+.contact-section h1{
+    text-align: center;
+    color: #ddd;
+
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px ;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width:100% ;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgb(red, green, blue);
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 1s;
+    
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 250px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid red;
+}
+
+.contact-form-btn:hover{
+    background: red;
+}

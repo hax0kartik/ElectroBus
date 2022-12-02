@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style-search.css">
+    <link rel="stylesheet" href="css/style-snackbar.css">
+</head>
+<body>
+    {{>navbar}}
+    {{>snackbar}}
+    <div class="container">
+        <div class="searchbar">
+            <form>
+                Book Bus Tickets
+                <input placeholder="From:">
+                <input placeholder="To:">
+                <input type="date" placeholder="date:">
+                <button>Search</button>
+            </form>
+        </div>
+        <div class="trending">
+            <div class="trending-heading">
+                <h1>Trending Tours⚡</h1>
+            </div>
+            {{#each trending}}
+            <div class="trending-box">
+                <div class="left-content">
+                    <div class="bus-name">
+                        <h1>{{this.bus.name}}</h1>
+                    </div>
+                    <div>
+                        <p class = "tc-grey">{{this.bus.type}}</p>
+                        {{#if this.bus.facilities.wifi}}
+                            <img src="/images/wifi.svg" style="height: 24px;">
+                        {{/if}}
+                        {{#if this.bus.facilities.water-bottle}}
+                            <img src="/images/bottle.svg" style="height: 24px;">
+                        {{/if}}
+                        {{#if this.bus.facilities.lamp}}
+                            <img src="/images/lamp.svg" style="height: 24px;">
+                        {{/if}}
+                    </div>
+                    <div class="stops">
+                        <img src="/images/stop.svg" style="height: 30px;"> 
+                        <p>{{this.tour.stops}} stops</p>
+                    </div>
+                </div>
+                <div class = "center-content">
+                    <div class = "content">
+                        <h1>{{this.tour.departure}}</h1>
+                        <h2 class = "tc-grey"> {{this.tour.from}} </h2>
+                        <p> {{this.tour.total-seats}} <br> Seats Available </p>
+                    </div>
+                    <div class = "midcontent">
+                        <h2 class = "tc-grey"> {{this.tour.duration }}<h2>
+                        <img src="/images/arrows.svg" class = "arrow">
+                    </div>
+                    <div class = "content">
+                        <h1>{{this.tour.arrival}}</h1>
+                        <h2 class = "tc-grey"> {{this.tour.to}} </h2>
+                        <p> {{this.tour.single-seats}} <br> Single Seats </p>
+                        </div>
+                    <div class = "extra-detail-container">
+                            <div class = "people-rating-container">
+                                <div class="people-container">
+                                    <img src="/images/people.svg" style="height: 24px;">
+                                    {{ this.tour.people }}
+                                </div>
+                                <div class = "rating-container">
+                                    <img src="/images/star.svg" style="height: 24px;">
+                                    {{ this.tour.rating }}
+                                </div>
+                            </div>
+                        <div class = "tc-grey">
+                            Starts from:     <br>INR {{ this.tour.cost }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-content">
+                    <div class = "right-deal-departure-container">
+                        {{#if this.tour.deal }}
+                            <div class = "deal-container">
+                                <p>Electro deal <br>Applied</p>
+                                <img src="/images/ideal.svg" style="height: 24px;">
+                            </div>
+                        {{/if}}
+                        <div class = "deal-container">
+                            <img src="/images/schedule.svg" style="height: 24px;">
+                            <p>Departure on:<br> {{this.tour.departure-date}} </p>
+                        </div>
+                    </div>
+                    <button onclick="showDropDown({{@index}})">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p id="top">Click on a seat to select it.</p>
+                <div class="seats-container">
+                    <p id="front">FRONT</p>
+                    <div class="seats-inner-container">
+                        <div class = "seats-row">
+
+                        </div>
+                        <div class = "seats-row">
+
+                        </div>
+                        <div class = "space">
+
+                        </div>
+                        <div class = "seats-row">
+
+                        </div>
+                        <div class = "seats-row">
+
+                        </div>
+                    </div>
+                </div>
+                <div class = "legend">
+                    <div class = "legend-item">
+                        <div class = "seat legend-box"></div>
+                        <p>Available</p>
+                    </div>
+                    <div class = "legend-item">
+                        <div class = "seat-greyed legend-box"></div>
+                        <p>Unavailable</p>
+                    </div>
+                    <div class = "legend-item">
+                        <div class = "seat-selected legend-box"></div>
+                        <p>Selected</p>
+                    </div>
+                </div>
+                <div class = "right-content2">
+                    <p id = "details"> Seat Details </p>
+                    <p id = "add_margin"> Seats Selected : </p>
+                    <p id = "details-content"> Total Cost : </p>
+                    <button onclick="onButton()"> Continue to Payment </button>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <script src="/scripts/dropdown.js"></script>
+    <script>
+        {{#each trending}}
+            setAmount({{this.tour.cost}})
+        {{/each}}
+        function onButton(){
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ 
+                x.className = x.className.replace("show", ""); 
+            }, 3000);
+        }
+    </script>
+</body>

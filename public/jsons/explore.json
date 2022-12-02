@@ -1,0 +1,23 @@
+{
+    "pages" : [
+        {
+            "bus" : {
+                "image": "images/bus2.png",
+                "name" : "Volt"
+            },
+            "places" : [" City Palace ", " Lake Pichola ", " Fateh Sagar Lake ", " and more... "],
+            "location" : "Udaipur",
+            "description" : "Founded by Maharana Udai Singh II in 1559, it's set around a series of artificial lakes and is known for its lavish royal residences."
+        },
+
+        {
+            "bus" : {
+                "image": "images/bus.jpeg",
+                "name" : "Ampere"
+            },
+            "places" : [" Hawa Mahal ", " Amber Palace ", " Nargarh Fort ", " and more... "],
+            "location" : "Jaipur",
+            "description" : "Jaipur evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color." 
+        }
+    ]
+}

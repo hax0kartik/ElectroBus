@@ -1,0 +1,39 @@
+{
+    "searchbar" : {
+        "form": " Book Bus Tickets ", 
+        "from" : "From:",
+        "to" : "To:",
+        "date" : "date:",
+        "button-text" : "Search"
+    },
+
+    "page" : {
+        "heading" : "Trending Tours⚡",
+        "images" : {
+            "wifi" : "/images/wifi.svg",
+            "water-bottle" : "/images/bottle.svg",
+            "lamp" : "/images/lamp.svg",
+            "stop" : "/images/stop.svg",
+            "arrow" : "/images/arrows.svg",
+            "people" : "/images/people.svg",
+            "star" : "/images/star.svg",
+            "ideal" : "/images/ideal.svg",
+            "schedule" : "/images/schedule.svg"
+        }
+    },
+
+    "extras" : {
+        "seats-available" : "Seats available",
+        "single-seats" : "Single Seats",
+        "starts-from" : "Starts from:     ",
+        "deal" : "Electro deal <br>Applied",
+        "departure" : "Departure on:", 
+        "book-now" : "Book Now",
+        "seat-select" : "Click on a seat to select it.", 
+        "legend" : ["Available", "Unavailable", "Selected"],
+        "details" : " Seat Details ",
+        "add-margin" : " Seats Selected ",
+        "details-content" : " Total Cost ",
+        "payment-button" : " Continue to Payment "
+    }
+}

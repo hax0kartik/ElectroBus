@@ -1,0 +1,12 @@
+{
+    "container" : {
+        "button" : {
+            "link" : "landing.html",
+            "text" : "Press ME I am from JSON!"
+        },
+
+        "paragraph" : {
+            "text" : ["Hello I am italic from json", "Hello I am bold from json", "Hello I am in a nested div from json"]
+        }
+    }
+}

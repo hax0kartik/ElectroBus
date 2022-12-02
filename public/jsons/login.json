@@ -1,0 +1,28 @@
+{
+    "page": {
+        "back-image" : "videos/log-in-girl.svg",
+
+        "heading": "Login Here",
+        
+        "placeholder" : [ 
+            "Enter your username", "Enter your Password"
+        ],
+
+        "submit" : "Submit",
+        
+        "forget" : "Forget Password",
+        
+        "container": {
+            "google": { 
+                "image": "images/google icon.jfif",
+                "text": "Sign in with Google"
+           },
+
+            "facebook": {
+                "image" :"images/facebook icon.jfif",
+                "text": "Sign in with facebook"
+            }
+
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "navbar" : {
+        "icon" : "/images/new logo.png",
+        "items" : [
+            ["HOME" , "/"], 
+            ["LAUNDRY", "/laundry"],
+            ["CONTACT US", "/contact-us"],
+            ["LOGIN", "/Login"]
+        ]
+    }
+}

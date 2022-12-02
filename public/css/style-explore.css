@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montessat', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #212121;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.bus-image{
+    margin-top: 30px;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin-left: 20%;
+}
+
+.side-text{
+    position: absolute;
+    width: 24vw;
+    height: 100vh;
+    top : 90px;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.side-text h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 80px;
+}
+
+.side-text li{
+    padding-bottom: 2.5px;
+    padding-top: 5px;
+}
+
+
+.footer {
+    background-color: #212121;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .location{
+    text-align: center;
+    width: fit-content;
+}
+
+.footer .description{
+    text-align: center;
+    width: 50vw;
+}
+
+.footer a button{
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    text-align: center;
+    height: 45px;
+    width: 160px;
+    font: 24px;
+    border: 2px solid red;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.footer a button:hover{
+    cursor: pointer;
+}
+
+
+
+nav{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+nav .logo{
+    height: 60px;
+}
+
+nav ul li{
+    padding-bottom: 3px;
+    list-style: none;
+    display:inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+
+
+.pages{
+    display: flex;
+    width: 200%;
+}
+
+.page{
+    width: 50%;
+    /* transition: all 0.7s; */
+}

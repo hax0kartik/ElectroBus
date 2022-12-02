@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style-explore.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <div class = "pages">
+        {{#each pages}}
+        <div class = "page">
+            <div class="main-body">
+                <div class="bus-image">
+                    <img src={{this.bus.image}}>
+                </div>
+            </div>
+            <div class = "side-text">
+                <h1> {{this.bus.name}} </h1>
+                <h3> Places Covered: </h3>
+                <ul>
+                    {{#each this.places}}
+                    <li> {{this}} </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class = "footer">
+                <div class = "location">
+                    <h1>{{this.location}}</h1>
+                </div>
+                <div class = "description">
+                    <p><i>{{this.description}}</i></p>
+                </div>
+                <a href="/search"><button>Book Now</button></a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <script src="/scripts/anim.js"></script>
+</body>
