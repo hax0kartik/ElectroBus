@@ -10,15 +10,15 @@
     "page" : {
         "heading" : "Trending Tours⚡",
         "images" : {
-            "wifi" : "/images/wifi.svg",
-            "water-bottle" : "/images/bottle.svg",
-            "lamp" : "/images/lamp.svg",
-            "stop" : "/images/stop.svg",
-            "arrow" : "/images/arrows.svg",
-            "people" : "/images/people.svg",
-            "star" : "/images/star.svg",
-            "ideal" : "/images/ideal.svg",
-            "schedule" : "/images/schedule.svg"
+            "wifi" : "images/wifi.svg",
+            "water-bottle" : "images/bottle.svg",
+            "lamp" : "images/lamp.svg",
+            "stop" : "images/stop.svg",
+            "arrow" : "images/arrows.svg",
+            "people" : "images/people.svg",
+            "star" : "images/star.svg",
+            "ideal" : "images/ideal.svg",
+            "schedule" : "images/schedule.svg"
         }
     },
 
